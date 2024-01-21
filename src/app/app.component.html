@@ -1,0 +1,22 @@
+<main class="main">
+    <app-nav-bar (passwordChange)="onPasswordChange($event)"></app-nav-bar>
+    <div class="tittle-challange">
+        <span>Adivinhe a palavra</span>
+        <span>Chutes Disponíveis: {{ tentativasRestantes }}</span>
+    </div>
+    <div class="card-section">
+        <div *ngFor="let card of secretPassword">
+            <app-card [letter]="card.letra" [isFlipped]="card.flipped"></app-card>
+        </div>
+    </div>
+    <div class="button-input-panel">
+        <input type="text" [(ngModel)]="currentLetter" placeholder="Letra">
+        <button (click)="onAttempt()">Realizar tentativa</button>
+    </div>
+    <div class="wrong-chars">
+        <span>Letras Erradas: </span>
+        <span *ngFor="let wrongLetter of wrongLetters"> {{ wrongLetter }} |</span>
+    </div>
+
+</main>
+<router-outlet />

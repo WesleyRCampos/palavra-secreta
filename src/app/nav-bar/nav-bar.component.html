@@ -1,0 +1,14 @@
+<div class="nav-bar">
+    <img src="https://www.itau.com.br/media/dam/m/5f03a85a73812bd2/webimage-Header_Logo-Itau.png" alt="">
+    <div class="input-button-div">
+        <div class="input-group">
+            <input [type]="showPassword ? 'text' : 'password'" class="form-control" [(ngModel)]="password"
+                (ngModelChange)="onPasswordInput()" placeholder="Adicione a palavra secreta aqui...">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" (click)="toggleShowPassword()">
+                    <i [class]="showPassword ? 'bi bi-eye-slash' : 'bi bi-eye'"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>

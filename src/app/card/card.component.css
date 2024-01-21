@@ -1,0 +1,41 @@
+.card {
+    width: 100px; /* ou o tamanho desejado */
+    height: 150px; /* ou o tamanho desejado */
+    perspective: 1000px;
+    margin: 10px;
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    border: 1px solid #ccc; /* opcional */
+  }
+  
+  .card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transform: rotateY(0deg);
+  }
+
+  .card-front h2 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .card-back {
+    background: gray;
+    transform: rotateY(-180deg);
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0deg);
+  }
+  

@@ -1,0 +1,65 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tittle-challange {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tittle-challange span {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.card-section {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-input-panel {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-input-panel input {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+}
+
+.button-input-panel button {
+    height: 34px;
+    margin: 5px;
+    color: white;
+    border: 1px solid #ff6200;
+    cursor: pointer;
+    background-color:  #ff6200;
+}
+
+.wrong-chars {
+    width: 100%;
+    height: 30px;
+}
+
+.wrong-chars span {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    font-size: 22px;
+}
